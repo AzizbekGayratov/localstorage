@@ -1,0 +1,105 @@
+.wrapper {
+    padding-top: 25px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px 30px 30px 10px;
+    padding: 8px;
+    background-color: seagreen;
+    box-shadow: 8px 8px 15px -5px rgba(245, 245, 245, 0.85);
+}
+
+.name {
+    color: lightgreen;
+}
+
+.email {
+    color: greenyellow;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.username {
+    font-size: 1.1em;
+    color: whitesmoke;
+}
+
+.button {
+    background-color: palegreen;
+    border-color: transparent;
+    color: seagreen;
+    font-weight: 900;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.block {
+    display: flex;
+    justify-content: end;
+    margin-top: -50px;
+}
+
+.userCard {
+    width: 325px;
+    background-color: seagreen;
+    margin-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 25px -10px rgba(245, 245, 245, 0.85);
+
+    a {
+        display: block;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    strong {
+        color: lightgreen;
+    }
+}
+
+.title {
+    color: white;
+}
+
+.cap {
+    font-size: 1.4em;
+    color: lightgreen;
+}
+
+.info {
+    color: greenyellow;
+}
+
+address p {
+    color: white;
+}
+
+.webSite {
+    color: white;
+}
+
+#link {
+    color: #fff;
+}
