@@ -35,9 +35,11 @@ const getNumber = (str) => {
     return newStr;
 }
 
+let arr = []
 const getUser = () => {
     let user = JSON.parse(localStorage.getItem("user"))
-    let idf = user[user.length - 1];
+    console.log(user);
+    let idf = arr[arr.length - 1];
     block.innerHTML = `
     <div class="userCard">
         <h1 class="title">${idf.username}</h1>
@@ -52,9 +54,7 @@ const getUser = () => {
     </div>
     `
 }
-getUser()
 
-let arr = []
 box.addEventListener("click", (e) => {
     fetch(`https://jsonplaceholder.typicode.com/users/${e.target.dataset.id}`)
         .then((res) => res.json())
@@ -64,3 +64,5 @@ box.addEventListener("click", (e) => {
             getUser()
         })
 })
+
+getUser()
